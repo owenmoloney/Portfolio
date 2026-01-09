@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.c93559e6.css",
+    "main.js": "/Portfolio/static/js/main.bec13ac7.js",
+    "static/css/64.bba8fa55.chunk.css": "/Portfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.e48752f6.chunk.js": "/Portfolio/static/js/64.e48752f6.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/Portfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.9e629386.chunk.js": "/Portfolio/static/js/769.9e629386.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/FordhamLogo.png": "/Portfolio/static/media/FordhamLogo.eb1df11bd0bcc043de4f.png",
+    "static/media/manOnTable.svg": "/Portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/tennisNomad.jpeg": "/Portfolio/static/media/tennisNomad.0f92af8110793779b13c.jpeg",
+    "static/media/contactMailDark.svg": "/Portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/Portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/ChaminadeLogo.webp": "/Portfolio/static/media/ChaminadeLogo.87b0fdb2e9d1287a64fc.webp",
+    "static/media/skill.svg": "/Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/trashLogo.avif": "/Portfolio/static/media/trashLogo.a6bfc3957647b09acf2f.avif",
+    "static/media/resume.pdf": "/Portfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
+    "index.html": "/Portfolio/index.html",
+    "static/media/medical-logo.svg": "/Portfolio/static/media/medical-logo.e27b5a03c9e3e15d8d74366bc8ad57e2.svg",
+    "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.c93559e6.css.map": "/Portfolio/static/css/main.c93559e6.css.map",
+    "main.bec13ac7.js.map": "/Portfolio/static/js/main.bec13ac7.js.map",
+    "64.bba8fa55.chunk.css.map": "/Portfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.e48752f6.chunk.js.map": "/Portfolio/static/js/64.e48752f6.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/Portfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.9e629386.chunk.js.map": "/Portfolio/static/js/769.9e629386.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c93559e6.css",
+    "static/js/main.bec13ac7.js"
+  ]
+}
