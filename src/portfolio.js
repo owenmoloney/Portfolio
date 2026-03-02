@@ -165,6 +165,19 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineering Intern",
+      company: "The Social Company of the United States, Inc",
+      //companylogo: require("./assets/images/socialCompanyLogo.png"), // Update with actual logo filename
+      date: "Spring 2026",
+      desc: "Developed a full-stack AI-powered personal assistant integrating Twilio SMS, Google Calendar OAuth, Grok AI, and financial data APIs with conversation memory and natural language processing.",
+      descBullets: [
+        "Architected scalable serverless backend infrastructure using Supabase Edge Functions, implementing secure OAuth 2.0 flows with PKCE, encrypted token storage, and automated refresh token rotation.",
+        "Engineered conversation memory layer using relational data modeling and indexed query optimization to maintain multi-session state consistency and low-latency retrieval.",
+        "Developed a reactive React (TypeScript) frontend with real-time messaging UI, async state synchronization, optimistic updates, and robust error boundary handling.",
+        "Configured webhook pipelines and event-driven messaging workflows to process inbound/outbound SMS, ensuring idempotency, rate limiting, and fault tolerance with A2P 10DLC messaging compliance."
+      ]
+    },
+    {
       role: "Junior Software Engineer",
       company: "Tennis Nomad",
       companylogo: require("./assets/images/tennisNomad.jpeg"),
