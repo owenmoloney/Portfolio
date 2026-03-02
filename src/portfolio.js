@@ -167,7 +167,7 @@ const workExperiences = {
     {
       role: "Software Engineering Intern",
       company: "The Social Company of the United States, Inc",
-      //companylogo: require("./assets/images/socialCompanyLogo.png"), // Update with actual logo filename
+      companylogo: require("./assets/images/socialCompanyLogo.png"), // Update with actual logo filename
       date: "Spring 2026",
       desc: "Developed a full-stack AI-powered personal assistant integrating Twilio SMS, Google Calendar OAuth, Grok AI, and financial data APIs with conversation memory and natural language processing.",
       descBullets: [
