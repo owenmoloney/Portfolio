@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
     "I am a passionate Full Stack Software Developer with experience building web and mobile applications using JavaScript, React.js, Node.js, React Native, and other modern libraries and frameworks." ),
   resumeLink:
-    "https://drive.google.com/file/d/1XQLIiHs3knHb_0Sz_tK8REm2EKY5YNFx/view?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/10J0AlokQ0vYvwhZV2pRk1fAGTH4GMonA3wN_VPi2ynk/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -167,7 +167,7 @@ const workExperiences = {
     {
       role: "Software Engineering Intern",
       company: "The Social Company of the United States, Inc",
-      companylogo: require("./assets/images/socialCompanyLogo.png"), // Update with actual logo filename
+      //companylogo: require("./assets/images/socialCompanyLogo.png"), // Update with actual logo filename
       date: "Spring 2026",
       desc: "Developed a full-stack AI-powered personal assistant integrating Twilio SMS, Google Calendar OAuth, Grok AI, and financial data APIs with conversation memory and natural language processing.",
       descBullets: [
