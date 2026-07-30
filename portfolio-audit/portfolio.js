@@ -23,9 +23,9 @@ const greeting = {
   username: "Owen Moloney",
   title: "Hi, I'm Owen",
   subTitle: emoji(
-    "Full-stack software engineer with experience building production applications end-to-end — from React/TypeScript frontends to Node.js and Supabase/AWS backends. Recently shipped features at The Social Company and Tennis Nomad." ),
+    "I am a passionate Full Stack Software Developer with experience building web and mobile applications using JavaScript, React.js, Node.js, React Native, and other modern libraries and frameworks." ),
   resumeLink:
-    "/resume.pdf", // Set to empty to hide the button
+    "https://docs.google.com/document/d/10J0AlokQ0vYvwhZV2pRk1fAGTH4GMonA3wN_VPi2ynk/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -43,7 +43,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK ENGINEER — REACT, NODE.JS, TYPESCRIPT, AND CLOUD-DEPLOYED BACKENDS",
+  subTitle: "ASPIRING FULL STACK DEVELOPER WHO HAS A DIVERSE STACK BACKGROUND & EAGER TO LEARN MORE",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -67,11 +67,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "sass",
+      fontAwesomeClassname: "fab fa-sass"
     },
     {
-      skillName: "TypeScript",
+      skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
@@ -83,8 +83,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "Express",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "swift",
+      fontAwesomeClassname: "fab fa-swift"
     },
     {
       skillName: "npm",
@@ -92,10 +92,6 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "MongoDB",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -142,6 +138,27 @@ const educationInfo = {
   ]
 };
 
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: true, //Set it to true to show Proficiency Section
+  experience: [
+    {
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Backend",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Programming",
+      progressPercentage: "60%"
+    }
+  ],
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+};
+
 // Work experience section
 
 const workExperiences = {
@@ -174,22 +191,24 @@ const workExperiences = {
       ]
     },
     {
-      role: "Developer",
-      company: "Architectural Wood Flooring Inc.",
-      date: "August 2023 – Present",
-      desc: "Built and continue to maintain a void-detection estimating tool in Java for a wood flooring business, replacing a manual takeoff process.",
-      descBullets: [
-        "Designed and built a void-detection algorithm in Java that calculates workable floor area and material/cost estimates from floor-plan input.",
-        "Continue to adjust and extend the algorithm as new material types and floor-shape requirements arise, without breaking existing estimate accuracy.",
-        "Tool is in continuous production use since 2023, cutting 50+ hours of manual takeoff time per quarter."
-      ]
-    },
-    {
       role: "Software Engineer Intern",
       company: "Alpha Prime Tech",
       companylogo: require("./assets/images/alphaprimetech_logo.jpeg"),
       date: "May 2024 – August 2024",
-      desc: "Completed 8 applied backend training projects covering OOP, data structures, and system design during an intensive Java-focused internship program."
+      desc: "Completed 90+ hours of professionally instructed Java training, gaining hands-on experience with industry-standard practices and how Java and other languages are applied in real-world software projects."
+    },
+    {
+      role: "Lifeguard & Swim Instructor",
+      company: "Douglaston Yacht Club",
+      companylogo: require("./assets/images/douglstonLogo.png"),
+      date: "June 2020 – August 2025",
+      desc: "Served as a lifeguard, swim instructor, and coach over multiple summers, leading classes, teams, and safety operations at The Douglaston Club.",
+      descBullets: [
+        "Instructed and organized swim lessons, swim coaching sessions, and aqua aerobics classes, ensuring all participants followed proper techniques.",
+        "Maintained strict pool safety, supervising swimmers and managing lifeguard and junior coach teams with full attentiveness for hours at a time.",
+        "Mentored and trained younger lifeguards and assistant instructors, improving team efficiency and safety standards.",
+        "Coached hundreds of children over three years, leading the swim team to three 2nd-place finishes in a competitive league."
+      ]
     }
   ]
 };
@@ -235,32 +254,6 @@ const bigProjects = {
           url: "https://github.com/owenmoloney/smart-waste-platform"
         }
       ]
-    },
-    {
-      image: require("./assets/images/programmer.svg"),
-      projectName: "Floor Estimate Pro",
-      projectDesc: "Java desktop application that detects voids in floor-plan geometry and calculates square-footage and cost estimates, replacing a fully manual takeoff process. In continuous production use since 2023.",
-      descBullets: [
-        "Built a void-detection algorithm handling irregular, non-rectangular floor shapes and unusable-space adjustments.",
-        "Structured the codebase so new material types and shape rules can be added without breaking existing estimate calculations.",
-        "In active production use, cutting 50+ hours of manual estimating time per quarter for a real wood flooring business."
-      ],
-      footerLink: [
-        { name: "View on GitHub", url: "https://github.com/owenmoloney/floor-estimate-pro" }
-      ]
-    },
-    {
-      image: require("./assets/images/skill.svg"),
-      projectName: "Resume Classifier",
-      projectDesc: "End-to-end resume-to-job matching pipeline using TF-IDF vectorization, Naive Bayes category classification, and cosine similarity ranking to shortlist candidates against job postings.",
-      descBullets: [
-        "Built a shared TF-IDF vector space so resumes and job postings can be directly compared despite differing vocabulary.",
-        "Used Naive Bayes to classify resumes into job categories before ranking within each category by cosine similarity.",
-        "Chose a classical NLP pipeline (TF-IDF + Naive Bayes) over embedding-based approaches for interpretability and low compute cost at this scale."
-      ],
-      footerLink: [
-        { name: "View on GitHub", url: "https://github.com/owenmoloney/resume-classifier" }
-      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -272,24 +265,128 @@ const bigProjects = {
 const achievementSection = {
   display: false // Commented out section
 };
+// const achievementSection = {
+//   title: emoji("Achievements And Certifications 🏆 "),
+//   subtitle:
+//     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+
+//   achievementsCards: [
+//     {
+//       title: "Google Code-In Finalist",
+//       subtitle:
+//         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+//       image: require("./assets/images/codeInLogo.webp"),
+//       imageAlt: "Google Code-In Logo",
+//       footerLink: [
+//         {
+//           name: "Certification",
+//           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+//         },
+//         {
+//           name: "Award Letter",
+//           url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+//         },
+//         {
+//           name: "Google Code-in Blog",
+//           url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+//         }
+//       ]
+//     },
+//     {
+//       title: "Google Assistant Action",
+//       subtitle:
+//         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+//       image: require("./assets/images/googleAssistantLogo.webp"),
+//       imageAlt: "Google Assistant Action Logo",
+//       footerLink: [
+//         {
+//           name: "View Google Assistant Action",
+//           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+//         }
+//       ]
+//     },
+
+//     {
+//       title: "PWA Web App Developer",
+//       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+//       image: require("./assets/images/pwaLogo.webp"),
+//       imageAlt: "PWA Logo",
+//       footerLink: [
+//         {name: "Certification", url: ""},
+//         {
+//           name: "Final Project",
+//           url: "https://pakistan-olx-1.firebaseapp.com/"
+//         }
+//       ]
+//     }
+//   ],
+//   display: true // Set false to hide this section, defaults to true
+// };
 
 // Blogs Section
 
 const blogSection = {
   display: false // Commented out section
 };
+// const blogSection = {
+//   title: "Blogs",
+//   subtitle:
+//     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+//   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+//   blogs: [
+//     {
+//       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+//       title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+//       description:
+//         "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+//     },
+//     {
+//       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+//       title: "Why REACT is The Best?",
+//       description:
+//         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+//     }
+//   ],
+//   display: true // Set false to hide this section, defaults to true
+// };
 
 // Talks Sections
 
 const talkSection = {
   display: false // Commented out section
 };
+// const talkSection = {
+//   title: "TALKS",
+//   subtitle: emoji(
+//     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+//   ),
+
+//   talks: [
+//     {
+//       title: "Build Actions For Google Assistant",
+//       subtitle: "Codelab at GDG DevFest Karachi 2019",
+//       slides_url: "https://bit.ly/saadpasta-slides",
+//       event_url: "https://www.facebook.com/events/2339906106275053/"
+//     }
+//   ],
+//   display: true // Set false to hide this section, defaults to true
+// };
 
 // Podcast Section
 
 const podcastSection = {
   display: false // Commented out section
 };
+// const podcastSection = {
+//   title: emoji("Podcast 🎙️"),
+//   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+
+//   // Please Provide with Your Podcast embeded Link
+//   podcast: [
+//     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+//   ],
+//   display: true // Set false to hide this section, defaults to true
+// };
 
 // Resume Section
 const resumeSection = {
@@ -304,6 +401,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+1 (917) 681-2295",
   email_address: "omoloney@fordham.edu"
 };
 
@@ -323,6 +421,7 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
+  techStack,
   workExperiences,
   openSource,
   bigProjects,
