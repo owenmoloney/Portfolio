@@ -150,9 +150,9 @@ const workExperiences = {
     {
       role: "Software Engineering Intern",
       company: "The Social Company of the United States, Inc",
-      //companylogo: require("./assets/images/socialCompanyLogo.png"), // Update with actual logo filename
-      date: "Spring 2026",
-      desc: "Developed a full-stack AI-powered personal assistant integrating Twilio SMS, Google Calendar OAuth, Grok AI, and financial data APIs with conversation memory and natural language processing.",
+      companylogo: require("./assets/images/thesoco_logo.jpeg"),
+      date: "December 2025 – June 2026",
+      desc: "Developed a full-stack AI-powered personal assistant over 5 months (including 2 months of planning and iteration on approach) integrating Twilio SMS, Google Calendar OAuth, Grok AI, and financial data APIs with conversation memory and natural language processing.",
       descBullets: [
         "Architected scalable serverless backend infrastructure using Supabase Edge Functions, implementing secure OAuth 2.0 flows with PKCE, encrypted token storage, and automated refresh token rotation.",
         "Engineered conversation memory layer using relational data modeling and indexed query optimization to maintain multi-session state consistency and low-latency retrieval.",
@@ -170,12 +170,14 @@ const workExperiences = {
         "Worked across the full stack to build a web platform with Admin, Client, and Marketing portals using Vue.js on the frontend and Node.js/Express on the backend.",
         "Designed and implemented a REST API with 12+ authenticated modules covering trips, invitations, participants, reservations, budgets, itineraries, and user profiles.",
         "Uses Firebase Firestore for data (trips, users, participants, invitations, reservations). All three portals connect to the same backend API and share the same authentication system.",
-        "Implemented role-based access control with protected routes, separating admin and client functionality using Firebase JWT authentication."
+        "Implemented role-based access control with protected routes, separating admin and client functionality using Firebase JWT authentication.",
+        "Wrote unit tests across front-end and back-end code."
       ]
     },
     {
       role: "Developer",
       company: "Architectural Wood Flooring Inc.",
+      companylogo: require("./assets/images/Architectural_Wood_Flooring_Inc.png"),
       date: "August 2023 – Present",
       desc: "Built and continue to maintain a void-detection estimating tool in Java for a wood flooring business, replacing a manual takeoff process.",
       descBullets: [
@@ -237,7 +239,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/programmer.svg"),
+      image: require("./assets/images/Estimate_Pro.png"),
       projectName: "Floor Estimate Pro",
       projectDesc: "Java desktop application that detects voids in floor-plan geometry and calculates square-footage and cost estimates, replacing a fully manual takeoff process. In continuous production use since 2023.",
       descBullets: [
@@ -250,7 +252,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/skill.svg"),
+      image: require("./assets/images/Resume_Class.png"),
       projectName: "Resume Classifier",
       projectDesc: "End-to-end resume-to-job matching pipeline using TF-IDF vectorization, Naive Bayes category classification, and cosine similarity ranking to shortlist candidates against job postings.",
       descBullets: [
