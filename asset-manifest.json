@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c93559e6.css",
-    "main.js": "/Portfolio/static/js/main.6db71676.js",
+    "main.css": "/Portfolio/static/css/main.ab812b6e.css",
+    "main.js": "/Portfolio/static/js/main.60dc86ea.js",
     "static/css/64.bba8fa55.chunk.css": "/Portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.e48752f6.chunk.js": "/Portfolio/static/js/64.e48752f6.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.9e629386.chunk.js": "/Portfolio/static/js/769.9e629386.chunk.js",
+    "static/media/Architectural_Wood_Flooring_Inc.png": "/Portfolio/static/media/Architectural_Wood_Flooring_Inc.e062afbe1809ec5a52f5.png",
+    "static/media/Resume_Class.png": "/Portfolio/static/media/Resume_Class.0b3885bc124e14731fde.png",
+    "static/media/Estimate_Pro.png": "/Portfolio/static/media/Estimate_Pro.8e923b3b2324593c28a4.png",
     "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/FordhamLogo.png": "/Portfolio/static/media/FordhamLogo.eb1df11bd0bcc043de4f.png",
@@ -14,20 +17,19 @@
     "static/media/contactMailDark.svg": "/Portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/Portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/ChaminadeLogo.webp": "/Portfolio/static/media/ChaminadeLogo.87b0fdb2e9d1287a64fc.webp",
-    "static/media/skill.svg": "/Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/trashLogo.avif": "/Portfolio/static/media/trashLogo.a6bfc3957647b09acf2f.avif",
     "index.html": "/Portfolio/index.html",
     "static/media/medical-logo.svg": "/Portfolio/static/media/medical-logo.924e1db0a6ad87dcc270e33a695b17c8.svg",
     "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.c93559e6.css.map": "/Portfolio/static/css/main.c93559e6.css.map",
-    "main.6db71676.js.map": "/Portfolio/static/js/main.6db71676.js.map",
+    "main.ab812b6e.css.map": "/Portfolio/static/css/main.ab812b6e.css.map",
+    "main.60dc86ea.js.map": "/Portfolio/static/js/main.60dc86ea.js.map",
     "64.bba8fa55.chunk.css.map": "/Portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.e48752f6.chunk.js.map": "/Portfolio/static/js/64.e48752f6.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.9e629386.chunk.js.map": "/Portfolio/static/js/769.9e629386.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c93559e6.css",
-    "static/js/main.6db71676.js"
+    "static/css/main.ab812b6e.css",
+    "static/js/main.60dc86ea.js"
   ]
 }
