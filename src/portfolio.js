@@ -25,7 +25,8 @@ const greeting = {
   subTitle: emoji(
     "Full-stack software engineer with experience building production applications end-to-end — from React/TypeScript frontends to Node.js and Supabase/AWS backends. Recently shipped features at The Social Company and Tennis Nomad."
   ),
-  resumeLink: "/resume.pdf", // Set to empty to hide the button
+  resumeLink:
+    process.env.PUBLIC_URL + "/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
