@@ -23,7 +23,8 @@ const greeting = {
   username: "Owen Moloney",
   title: "Hi, I'm Owen",
   subTitle: emoji(
-    "I am a passionate Full Stack Software Developer with experience building web and mobile applications using JavaScript, React.js, Node.js, React Native, and other modern libraries and frameworks." ),
+    "I am a passionate Full Stack Software Developer with experience building web and mobile applications using JavaScript, React.js, Node.js, React Native, and other modern libraries and frameworks."
+  ),
   resumeLink:
     "https://docs.google.com/document/d/10J0AlokQ0vYvwhZV2pRk1fAGTH4GMonA3wN_VPi2ynk/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -43,7 +44,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "ASPIRING FULL STACK DEVELOPER WHO HAS A DIVERSE STACK BACKGROUND & EAGER TO LEARN MORE",
+  subTitle:
+    "ASPIRING FULL STACK DEVELOPER WHO HAS A DIVERSE STACK BACKGROUND & EAGER TO LEARN MORE",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -124,7 +126,7 @@ const educationInfo = {
       logo: require("./assets/images/FordhamLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2022 - May 2026",
-      desc: "Recieved Dean's List Honors multiple semesters while being an active member of club Sports",
+      desc: "Recieved Dean's List Honors multiple semesters while being an active member of club Sports"
     },
     {
       schoolName: "Chaminade High School",
@@ -132,8 +134,10 @@ const educationInfo = {
       subHeader: "High School Diploma",
       duration: "September 2018 - May 2022",
       desc: "Revieced Honors List Every Trimester Until Graduation",
-      descBullets: ["Competed at a State level in Varsity Track & Field",
-                    "Participated in multiple clubs for community service and leadership positions"]
+      descBullets: [
+        "Competed at a State level in Varsity Track & Field",
+        "Participated in multiple clubs for community service and leadership positions"
+      ]
     }
   ]
 };
@@ -228,9 +232,12 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/medical-logo.svg").default || require("./assets/images/medical-logo.svg"),
+      image:
+        require("./assets/images/medical-logo.svg").default ||
+        require("./assets/images/medical-logo.svg"),
       projectName: "MEDMMO",
-      projectDesc: "A web application for managing medical records for a hospital.",
+      projectDesc:
+        "A web application for managing medical records for a hospital.",
       footerLink: [
         {
           name: "Visit Website",
@@ -242,7 +249,8 @@ const bigProjects = {
     {
       image: require("./assets/images/trashLogo.avif"),
       projectName: "Smart Waste Management System",
-      projectDesc: "A C++ simulator that models and optimizes janitorial waste collection using multiple scheduling algorithms and priority-based task management.",
+      projectDesc:
+        "A C++ simulator that models and optimizes janitorial waste collection using multiple scheduling algorithms and priority-based task management.",
       descBullets: [
         "Built a C++17 simulator modeling janitorial waste management, implementing FCFS, SJF, and dynamic PRIORITY scheduling using bin attributes (fill, weight, moisture, distance, aging) to optimize task assignment.",
         "Generated per-bin metrics and visualized schedules with ASCII Gantt charts, using file output to preserve alignment for complex, multi-hour timelines.",

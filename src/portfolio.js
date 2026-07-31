@@ -23,9 +23,9 @@ const greeting = {
   username: "Owen Moloney",
   title: "Hi, I'm Owen",
   subTitle: emoji(
-    "Full-stack software engineer with experience building production applications end-to-end — from React/TypeScript frontends to Node.js and Supabase/AWS backends. Recently shipped features at The Social Company and Tennis Nomad." ),
-  resumeLink:
-    "/resume.pdf", // Set to empty to hide the button
+    "Full-stack software engineer with experience building production applications end-to-end — from React/TypeScript frontends to Node.js and Supabase/AWS backends. Recently shipped features at The Social Company and Tennis Nomad."
+  ),
+  resumeLink: "/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -43,7 +43,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK ENGINEER — REACT, NODE.JS, TYPESCRIPT, AND CLOUD-DEPLOYED BACKENDS",
+  subTitle:
+    "FULL STACK ENGINEER — REACT, NODE.JS, TYPESCRIPT, AND CLOUD-DEPLOYED BACKENDS",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -128,7 +129,7 @@ const educationInfo = {
       logo: require("./assets/images/FordhamLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2022 - May 2026",
-      desc: "Recieved Dean's List Honors multiple semesters while being an active member of club Sports",
+      desc: "Recieved Dean's List Honors multiple semesters while being an active member of club Sports"
     },
     {
       schoolName: "Chaminade High School",
@@ -136,8 +137,10 @@ const educationInfo = {
       subHeader: "High School Diploma",
       duration: "September 2018 - May 2022",
       desc: "Revieced Honors List Every Trimester Until Graduation",
-      descBullets: ["Competed at a State level in Varsity Track & Field",
-                    "Participated in multiple clubs for community service and leadership positions"]
+      descBullets: [
+        "Competed at a State level in Varsity Track & Field",
+        "Participated in multiple clubs for community service and leadership positions"
+      ]
     }
   ]
 };

@@ -46,7 +46,9 @@ export default function StartupProject() {
     <div className="experience-detail-body">
       <h5
         className={
-          isDark ? "experience-text-role dark-mode-text" : "experience-text-role"
+          isDark
+            ? "experience-text-role dark-mode-text"
+            : "experience-text-role"
         }
       >
         {project.name}

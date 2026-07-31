@@ -26,14 +26,18 @@ export default function WorkExperience() {
     <div className="experience-detail-body">
       <h5
         className={
-          isDark ? "experience-text-role dark-mode-text" : "experience-text-role"
+          isDark
+            ? "experience-text-role dark-mode-text"
+            : "experience-text-role"
         }
       >
         {card.role}
       </h5>
       <h5
         className={
-          isDark ? "experience-text-date dark-mode-text" : "experience-text-date"
+          isDark
+            ? "experience-text-date dark-mode-text"
+            : "experience-text-date"
         }
       >
         {card.date}
