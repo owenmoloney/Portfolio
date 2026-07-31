@@ -208,61 +208,112 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "PERSONAL AND ACADEMIC PROJECTS",
   projects: [
     {
-      image: require("./assets/images/medical-logo.svg").default || require("./assets/images/medical-logo.svg"),
-      projectName: "MEDMMO",
-      projectDesc: "A web application for managing medical records for a hospital.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://storm.cis.fordham.edu/~mballard7/medical-records-swe/medical-records-deploy/"
-        }
-        //  you can add extra buttons here.
-      ]
+      name: "Chronos",
+      subtitle: "Distributed Job Scheduler (In Progress)",
+      image: require("./assets/images/CHRONOS.png"),
+      status: "In Progress",
+      desc: "Production-style distributed job scheduler built in Go for reliable background task execution. Designed around distributed systems concepts including worker coordination, fault tolerance, durable persistence, and recovery from failures.",
+      technologies: [
+        "Go",
+        "PostgreSQL",
+        "Redis",
+        "React",
+        "TypeScript",
+        "Docker",
+        "GitHub Actions",
+        "Prometheus"
+      ],
+      engineeringConcepts: [
+        "Leader Election",
+        "Worker Coordination",
+        "Fault Tolerance",
+        "Retry Systems",
+        "Durable Persistence"
+      ],
+      whyBuilt:
+        "I wanted to move beyond application-level development and build infrastructure similar to the systems that power modern software platforms. Chronos explores the engineering challenges behind reliable distributed execution, including coordination, failure recovery, and scalable background processing.",
+      futureApplications:
+        "Can serve as an execution layer for future AI agents and SaaS applications requiring scheduled workflows, background jobs, delayed actions, and reliable external API processing.",
+      github: "https://github.com/owenmoloney/chronos"
     },
     {
+      name: "MEDMMO",
+      subtitle: "Medical Records Management Platform",
+      image:
+        require("./assets/images/medical-logo.svg").default ||
+        require("./assets/images/medical-logo.svg"),
+      desc: "A full-stack web application designed to help hospitals manage and organize medical records. The platform focuses on improving accessibility and management of healthcare information through a structured digital system.",
+      technologies: ["JavaScript", "Web Development", "Database Systems"],
+      engineeringConcepts: [
+        "Full-Stack Application Architecture",
+        "Database Design",
+        "CRUD Operations",
+        "User-Focused Software Design"
+      ],
+      whyBuilt:
+        "I wanted to build a practical application that solves a real-world organizational problem while applying software engineering principles. The project provided experience designing systems around structured data and user workflows.",
+      futureApplications:
+        "Could be expanded into a larger healthcare platform with authentication, role-based access control, analytics, and integrations with external healthcare systems.",
+      demo: "https://storm.cis.fordham.edu/~mballard7/medical-records-swe/medical-records-deploy/"
+    },
+    {
+      name: "Smart Waste Management System",
+      subtitle: "C++ Scheduling Algorithm Simulator",
       image: require("./assets/images/trashLogo.avif"),
-      projectName: "Smart Waste Management System",
-      projectDesc: "A C++ simulator that models and optimizes janitorial waste collection using multiple scheduling algorithms and priority-based task management.",
-      descBullets: [
-        "Built a C++17 simulator modeling janitorial waste management, implementing FCFS, SJF, and dynamic PRIORITY scheduling using bin attributes (fill, weight, moisture, distance, aging) to optimize task assignment.",
-        "Generated per-bin metrics and visualized schedules with ASCII Gantt charts, using file output to preserve alignment for complex, multi-hour timelines.",
-        "Enabled fully tunable priority weights via CLI, integrating modular code for parsing, scheduling, and metrics while collaborating on debugging, testing, and documentation."
+      desc: "A C++17 simulator that models and optimizes janitorial waste collection using scheduling algorithms and priority-based task management. The system evaluates bin conditions and dynamically assigns collection tasks.",
+      technologies: ["C++17"],
+      engineeringConcepts: [
+        "Scheduling Algorithms",
+        "Priority Queues",
+        "Algorithm Optimization",
+        "Simulation Design",
+        "Metrics Generation"
       ],
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://github.com/owenmoloney/smart-waste-platform"
-        }
-      ]
+      whyBuilt:
+        "I wanted to explore algorithm design beyond traditional interview problems by applying scheduling techniques to a realistic optimization problem. The project strengthened my understanding of system modeling, performance tradeoffs, and modular software design.",
+      futureApplications:
+        "Could be extended into real-world smart infrastructure systems using IoT sensor data, predictive scheduling, and automated resource allocation.",
+      github: "https://github.com/owenmoloney/smart-waste-platform"
     },
     {
+      name: "Floor Estimate Pro",
+      subtitle: "Production Java Estimation Application",
       image: require("./assets/images/Estimate_Pro.png"),
-      projectName: "Floor Estimate Pro",
-      projectDesc: "Java desktop application that detects voids in floor-plan geometry and calculates square-footage and cost estimates, replacing a fully manual takeoff process. In continuous production use since 2023.",
-      descBullets: [
-        "Built a void-detection algorithm handling irregular, non-rectangular floor shapes and unusable-space adjustments.",
-        "Structured the codebase so new material types and shape rules can be added without breaking existing estimate calculations.",
-        "In active production use, cutting 50+ hours of manual estimating time per quarter for a real wood flooring business."
+      desc: "A Java desktop application that detects floor-plan voids and calculates square-footage and material cost estimates, replacing a previously manual takeoff process. The application has been used in production since 2023.",
+      technologies: ["Java"],
+      engineeringConcepts: [
+        "Computational Geometry",
+        "Algorithm Design",
+        "Extensible Software Architecture",
+        "Production Software Development"
       ],
-      footerLink: [
-        { name: "View on GitHub", url: "https://github.com/owenmoloney/floor-estimate-pro" }
-      ]
+      whyBuilt:
+        "I built this application to solve a real business problem by replacing a repetitive manual workflow with automated calculations. The project demonstrates how software can directly improve operational efficiency.",
+      futureApplications:
+        "Could be expanded with cloud storage, collaborative estimating tools, automated blueprint processing, and integrations with business management systems.",
+      github: "https://github.com/owenmoloney/floor-estimate-pro"
     },
     {
+      name: "Resume Classifier",
+      subtitle: "NLP-Based Resume Matching Pipeline",
       image: require("./assets/images/Resume_Class.png"),
-      projectName: "Resume Classifier",
-      projectDesc: "End-to-end resume-to-job matching pipeline using TF-IDF vectorization, Naive Bayes category classification, and cosine similarity ranking to shortlist candidates against job postings.",
-      descBullets: [
-        "Built a shared TF-IDF vector space so resumes and job postings can be directly compared despite differing vocabulary.",
-        "Used Naive Bayes to classify resumes into job categories before ranking within each category by cosine similarity.",
-        "Chose a classical NLP pipeline (TF-IDF + Naive Bayes) over embedding-based approaches for interpretability and low compute cost at this scale."
+      desc: "An end-to-end NLP pipeline that matches resumes with job postings using TF-IDF vectorization, Naive Bayes classification, and cosine similarity ranking. The system focuses on interpretable machine learning rather than black-box approaches.",
+      technologies: ["Python", "TF-IDF", "Naive Bayes", "NLP"],
+      engineeringConcepts: [
+        "Natural Language Processing",
+        "Machine Learning Pipelines",
+        "Text Vectorization",
+        "Similarity Ranking",
+        "Model Interpretability"
       ],
-      footerLink: [
-        { name: "View on GitHub", url: "https://github.com/owenmoloney/resume-classifier" }
-      ]
+      whyBuilt:
+        "I wanted to explore practical machine learning applications while understanding the fundamentals behind text classification and ranking systems. The project allowed me to build an explainable NLP pipeline from the ground up.",
+      futureApplications:
+        "Could be expanded with embeddings, LLM-based ranking, personalized job recommendations, and automated career assistance workflows.",
+      github: "https://github.com/owenmoloney/resume-classifier"
     }
   ],
   display: true // Set false to hide this section, defaults to true

@@ -1,70 +1,227 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
+.project-subtitle {
+  margin: 0 0 1.25rem;
 }
-.card-title {
+
+.project-case-subtitle {
+  text-align: center;
+  color: $buttonColor;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0.4rem 0 0;
+  letter-spacing: 0.01em;
+}
+
+.dark-mode-text.project-case-subtitle {
+  color: $buttonHover !important;
+}
+
+.project-section {
+  margin-top: 1.15rem;
+}
+
+.project-section .experience-text-desc {
+  margin-top: 0.35rem;
+}
+
+.project-section-title {
   color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 13px;
   font-weight: 700;
-  margin: 15px 0 0 0;
-}
-.card-subtitle {
-  color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.5rem;
-}
-.project-card {
-  display: flex;
-  flex-direction: column;
-  background-color: $lightBackground2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-  justify-content: center;
-}
-.project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
-}
-
-.project-detail {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
   text-align: center;
 }
-.project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
 }
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
-}
-.project-image {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
+
+.experience-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
 }
 
-.projects-container {
+.experience-container > * {
+  flex: 1;
+}
+
+.experience-tabs-desktop {
+  display: block;
+}
+
+.experience-accordion-mobile {
+  display: none;
+}
+
+.experience-tabs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
-.project-card-footer span.project-tag {
+.project-tabs {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.experience-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 0.75rem;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+  background: $lightBackground2;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: $lightBoxShadowDark 0px 6px 18px -12px;
+}
+
+.experience-tab-dark {
+  background: $darkBackground;
+}
+
+.experience-tab:hover,
+.experience-tab-active {
+  box-shadow: $lightBoxShadowDark 0px 14px 24px -12px;
+  border-color: $buttonColor;
+}
+
+.experience-tab span {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.25;
+  color: $textColor;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.experience-tab-logo {
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  background: $lightBackground1;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  flex-shrink: 0;
+}
+
+.project-tab-initial {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $buttonColor;
+  object-fit: unset;
+}
+
+.experience-detail-panel,
+.experience-accordion-item {
+  background: $lightBackground2;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+}
+
+.experience-detail-panel-dark,
+.experience-accordion-item-dark {
+  background: $darkBackground;
+}
+
+.experience-accordion-item-dark .experience-accordion-chevron {
+  border-right-color: $textColorDark;
+  border-bottom-color: $textColorDark;
+}
+
+.experience-detail-body {
+  padding: 1.75rem 1.5rem 1.5rem;
+}
+
+.experience-text-role {
+  text-align: center;
+  color: $textColor;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+  line-height: normal;
+}
+
+.experience-text-date {
+  text-align: center;
+  color: $textColor;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 0.75rem;
+  font-weight: 600;
+}
+
+.experience-text-desc {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dark-mode-text {
+  color: $textColorDark !important;
+}
+
+.experience-detail-bullets {
+  margin: 1rem auto 0;
+  max-width: 52rem;
+  padding-left: 1.25rem;
+  text-align: left;
+}
+
+.project-tech-stack {
+  text-align: center;
+  margin: 0.35rem 0 0;
+}
+
+.project-concept-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem auto 0;
+  max-width: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem 1.25rem;
+}
+
+.project-concept-item {
+  color: $cardSubtitle;
+  font-size: 15px;
+  line-height: 1.4;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.project-concept-check {
+  color: $buttonColor;
+  font-weight: 700;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
   vertical-align: middle;
@@ -76,13 +233,87 @@
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 
+.project-tag:hover {
+  background: $buttonHover;
+}
+
+.experience-accordion-item + .experience-accordion-item {
+  margin-top: 0.75rem;
+}
+
+.experience-accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.experience-accordion-header span:not(.experience-accordion-chevron) {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+  color: $textColor;
+}
+
+.experience-accordion-chevron {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid $textColor;
+  border-bottom: 2px solid $textColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.experience-accordion-chevron.open {
+  transform: rotate(225deg);
+}
+
+.experience-accordion-panel {
+  border-top: 1px solid $lightBorder1;
+}
+
+@media (max-width: 1380px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+  .experience-tab-logo {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  .experience-text-role {
+    font-size: 22px;
+  }
+  .experience-text-date {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .experience-tabs-desktop {
+    display: none;
+  }
+  .experience-accordion-mobile {
+    display: block;
+  }
+  .experience-tab-logo {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
   .project-subtitle {
     font-size: 16px;
     text-align: center;
